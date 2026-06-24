@@ -1,0 +1,196 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.header {
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #60a5fa;
+  margin: 0 0 8px;
+  font-size: 0.85rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  color: #94a3b8;
+  max-width: 640px;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 24px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.summaryCard {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.summarySentence {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.adjectives {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.adjectives span {
+  background: rgba(96, 165, 250, 0.14);
+  color: #bfdbfe;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.summaryRight {
+  display: grid;
+  gap: 18px;
+}
+
+.scoreRow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.scoreCard {
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.1);
+  border-radius: 18px;
+  padding: 18px;
+  text-align: center;
+}
+
+.scoreLabel {
+  margin: 0 0 6px;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.scoreValue {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.summarySnapshot {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.gridSection {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+}
+
+.chartCard h2,
+.notesCard h2 {
+  margin-top: 0;
+}
+
+.chart {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.chartRow {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  align-items: center;
+}
+
+.chartRow span:first-child {
+  color: #cbd5e1;
+}
+
+.bar {
+  height: 16px;
+  border-radius: 999px;
+  overflow: hidden;
+  display: flex;
+  background: rgba(148, 163, 184, 0.1);
+}
+
+.barPositive {
+  background: #34d399;
+}
+
+.barNeutral {
+  background: #60a5fa;
+}
+
+.barNegative {
+  background: #f87171;
+}
+
+.chartCaption {
+  margin: 16px 0 0;
+  color: #94a3b8;
+}
+
+.pairedBars {
+  margin-top: 20px;
+  display: grid;
+  gap: 16px;
+}
+
+.pairedBarsItem {
+  display: grid;
+  gap: 8px;
+}
+
+.pairedBar {
+  height: 18px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(148, 163, 184, 0.12);
+}
+
+.pairedBar span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, #818cf8 0%, #60a5fa 100%);
+}
+
+.notesCard ul {
+  margin: 16px 0 0;
+  padding-left: 20px;
+  color: #cbd5e1;
+}
+
+.notesCard li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+  .summaryCard,
+  .gridSection {
+    grid-template-columns: 1fr;
+  }
+}
